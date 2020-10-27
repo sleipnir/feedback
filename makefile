@@ -26,7 +26,12 @@ store-open:
 flu-web-init:
 	cd $(EX_FSPATH) && flutter create .
 flu-web-run:
+	# Uses DOM.
 	cd $(EX_FSPATH) && flutter run -d chrome
+flu-web-run1:
+	# Uses WASM
+	# Does this fix the problem ? Nope - same error as DOM version
+	cd $(EX_FSPATH) && flutter run -d chrome --release --dart-define=FLUTTER_WEB_USE_SKIA=true
 flu-web-build:
 	cd $(EX_FSPATH) && flutter build web --release --csp --no-source-maps --pwa-strategy none
 flu-web-serve:
