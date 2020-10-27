@@ -13,9 +13,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.16.1
+  flutter_localized_locales: ^1.1.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  args:
+  intl_translation:
 
 flutter:

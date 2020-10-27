@@ -56,3 +56,17 @@ flu-desk-pack:
 
 flu-mob-build:
 	cd $(EX_FSPATH) && flutter build apk --release --shrink --target-platform android-arm,android-arm64,android-x64 --split-per-abi
+
+# Playing with the new way flutter does lang stuf
+# See_https://github.com/flutter/gallery/tree/master/lib/l10n
+
+lang-gen:
+	# not working
+	flutter gen-l10n \
+		--template-arb-file=intl_en.arb \
+		--output-localization-file=gallery_localizations.dart \
+		--output-class=feedbackLocalizations
+
+lang-gen1:
+	# not working
+	dart ./tool/l10n_cli/main.dart
