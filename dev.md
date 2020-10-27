@@ -34,6 +34,9 @@ https://github.com/ueman/feedback/issues/13
 seems to be caused by this:
 https://github.com/flutter/flutter/issues/59072
 
+Dom version
+CanvasKit version
+
 --
 
 
