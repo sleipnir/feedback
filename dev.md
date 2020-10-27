@@ -40,11 +40,11 @@ https://github.com/flutter/flutter/issues/59072
 Desktop
 - works fine.
 
-
-
-
---
+---
 
 What to do with the data ?
 - send over grpc
 - then send as email to SuperAdmin 
+
+here is the code intersection !
+- https://github.com/ueman/feedback/issues/10
